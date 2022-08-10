@@ -1,12 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>titulo</title>
+  <title><%= title %></title>
+  <%- include('./partials/head.html') %>
 </head>
+
 <body>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates aliquid voluptas totam vitae placeat deleniti repellendus eos, necessitatibus cupiditate perspiciatis soluta odit, voluptatem eaque a natus ea incidunt, accusantium minus?</p>
+  <%- include('./partials/navigation.html') %>
+  <br>
+  <div class="container animate__animated  animate__pulse"> 
+    <header class="row">
+      <div class="col-lg-12 text-center">
+        <img src="/img/spaceX.png" class="img-thumbnail" alt="spaceX">
+      </div>
+    </header>
+  </div>
+  <br>
+  <!-- <div class="container-sm" style="max-width:600PX">
+    <div class="card">
+      <h5 class="card-title">hola</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+        content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div> -->
+  <div class="container-fluid" id="about">
+    <div class="row bg-dark text-white p-5 text-center">
+      <div class="col-sm-6">
+        <i class="fab fa-youtube fa-10x"></i>
+      </div>
+      <div class="col-sm-6">
+        <h3>Something</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus minima velit libero. Sequi assumenda
+          sit repudiandae veniam quis illo, velit ducimus consequatur similique, rem neque dolor modi ad esse autem non
+          nostrum aut recusandae explicabo sed accusantium officia sint quidem.</p>
+      </div>
+    </div>
+  </div>
+  <%- include('./partials/footer.html') %>
+
 </body>
+
 </html>
